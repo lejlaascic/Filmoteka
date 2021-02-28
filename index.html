@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    <div id="wrapper">
+        
+        <div id="search-box">
+            <div class="input-search">
+                <input type="text" placeholder="Search..." name="search" id="search">
+                <i class="fas fa-search"></i>
+            </div>
+            <div id="lista" class="none"></div>
+        </div>
+      
+        <aside>
+                <label for="film">Enter a movie name: </label>
+                <input type="text" id="title-film" name="title-film" class="film" required>
+                
+                <label for="img-film">Film image: </label>
+                <input type="text" id="img-film" name="img-film" class="film" required >
+                
+                <label for="actor">Choose an actor in the film: </label>
+                <select name="actor" id="actor" class="film" required>
+                    <option value="Al Pacino">Al Pacino</option>
+                    <option value="Justin Timberlake">Justin Timberlake</option>
+                    <option value="Gerard Butler">Gerard Butler</option>
+                    <option value="Leonardo DiCaprio">Leonardo DiCaprio</option>
+                    <option value="Orlando Bloom">Orlando Bloom</option>
+                    <option value="Bred Pitt">Bred Pitt</option>
+                    <option value="Christian Bale">Christian Bale<option>
+                    <option value="Morgan Freeman">Morgan Freeman</option>
+                    <option value="Matthew McConaughey">Matthew      McConaughey</option>
+                    <option value="Julia Roberts">Julia Roberts</option>
+                    <option value="Julia Roberts">Julia Roberts</option>
+                    <option value="Denzel Washington">Denzel Washington</option>
+                </select>
+                
+                <label for="description">Film description: </label>
+                <textarea name="description" id="description" class="film" cols="30" rows="10" required></textarea>
+                <p id="error" class="none"></p>
+              
+                <button onclick="saveMovie()" id="save">Save</button>
+                <button type="submit" id="clear" onclick="clearMovie()">Clear</button>
+        </aside>
+        <main id="main">
+        
+        </main>
+    </div>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>

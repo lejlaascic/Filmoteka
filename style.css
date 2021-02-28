@@ -1,0 +1,153 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+  background-color: #000;
+}
+#wrapper {
+  width: 100%;
+  margin: auto;
+  padding: 0;
+  height: auto;
+}
+
+#search-box {
+  width: 100%;
+  background-color: #888;
+  height: 50px;
+  padding: 9px;
+  position: fixed;
+  z-index: 10;
+}
+.input-search {
+  width: 50%;
+  margin: auto;
+  overflow: hidden;
+}
+#search {
+  width: 95%;
+  font-size: 1em;
+  float: left;
+  border: none;
+  padding: 7px 12px;
+  outline: none;
+  border: none;
+}
+#search-box i {
+  float: right;
+  background-color: #fff;
+  font-size: 1em;
+  line-height: 32px;
+  padding: 0 15.5px;
+  border: none;
+  cursor: pointer;
+}
+
+#lista {
+  overflow: hidden;
+  clear: both;
+  width: 50%;
+  margin: auto;
+  border: 1px solid #888;
+  border-top: none;
+}
+#lista li {
+  cursor: pointer;
+  padding: 5px;
+  font-size: 1em;
+}
+aside {
+  width: 30%;
+  padding: 15px;
+  float: left;
+  padding-top: 200px;
+}
+main {
+  width: 70%;
+  padding: 15px;
+  float: right;
+  padding-top: 200px;
+}
+aside label,
+aside input {
+  display: block;
+  float: left;
+}
+aside label {
+  font-size: 1.1em;
+  padding-bottom: 5px;
+  color: #fff;
+}
+aside input,
+textarea,
+select {
+  width: 100%;
+  padding: 8px 10px;
+  border: 1px solid #000;
+  outline: none;
+  margin-bottom: 10px;
+  font-size: 1em;
+}
+aside button,
+.card button {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 12px;
+  outline: none;
+  cursor: pointer;
+  color: #fff;
+  font-size: 1em;
+}
+
+#save {
+  background-color: #0944da;
+}
+#clear {
+  background-color: #ec082d;
+}
+.delate {
+  background-color: #ec082d;
+  display: block;
+  margin: auto;
+}
+aside button:hover,
+.card button:hover,
+.search-btn:hover {
+  opacity: 0.6;
+}
+.card {
+  position: relative;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 30%;
+  background-color: #f2f2f2;
+  float: left;
+  padding: 10px 20px;
+  border-radius: 20px;
+  margin: 10px;
+  overflow: hidden;
+}
+.card-img {
+  height: 500px;
+}
+.ul-movie {
+  list-style-type: none;
+  margin: 0;
+  padding: 10px;
+  background-color: #ddd;
+}
+
+#error {
+  padding: 10px;
+  font-size: 1em;
+  background-color: #ea0d17;
+  color: #fff;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.none {
+  display: none;
+}
